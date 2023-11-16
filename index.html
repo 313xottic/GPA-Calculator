@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPA Calculator</title>      
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" type="image/png" href="calc.png">  
+    </head>
+    <body>
+        <div class="container">
+            <h1>GPA Calculator</h1>
+            <div class="info">
+                <p style="margin: 10px 0px 10px 0px;">
+                    This GPA calculator allows you to enter the name and grade (A-F) for each course in the provided fields. You can add or remove courses using the "Add Class" and "Remove Class" buttons. Click "Calculate" to compute your GPA, which will be displayed next to the "GPA" label. If you wish to start over, use the "Reset" button to clear all fields. Please note, this calculator assumes all courses carry equal weight and may not reflect your institution's specific GPA calculation method.
+                </p>
+            </div>
+            <div id="grades">
+                <div class="grade-input">
+                    <input type="text" class="course" placeholder="Course Name">
+                    <select class="grade">
+                        <option value="4.0">A</option>
+                        <option value="3.7">A-</option>
+                        <option value="3.3">B+</option>
+                        <option value="3.0">B</option>
+                        <option value="2.7">B-</option>
+                        <option value="2.3">C+</option>
+                        <option value="2.0">C</option>
+                        <option value="1.7">C-</option>
+                        <option value="1.3">D+</option>
+                        <option value="1.0">D</option>
+                        <option value="0.0">F</option>
+                    </select>
+                </div>
+                <div class="grade-input">
+                    <input type="text" class="course" placeholder="Course Name">
+                    <select class="grade">
+                        <option value="4.0">A</option>
+                        <option value="3.7">A-</option>
+                        <option value="3.3">B+</option>
+                        <option value="3.0">B</option>
+                        <option value="2.7">B-</option>
+                        <option value="2.3">C+</option>
+                        <option value="2.0">C</option>
+                        <option value="1.7">C-</option>
+                        <option value="1.3">D+</option>
+                        <option value="1.0">D</option>
+                        <option value="0.0">F</option>
+                    </select>
+                </div>
+                <div class="grade-input">
+                    <input type="text" class="course" placeholder="Course Name">
+                    <select class="grade">
+                        <option value="4.0">A</option>
+                        <option value="3.7">A-</option>
+                        <option value="3.3">B+</option>
+                        <option value="3.0">B</option>
+                        <option value="2.7">B-</option>
+                        <option value="2.3">C+</option>
+                        <option value="2.0">C</option>
+                        <option value="1.7">C-</option>
+                        <option value="1.3">D+</option>
+                        <option value="1.0">D</option>
+                        <option value="0.0">F</option>
+                    </select>
+                </div>
+                <div class="grade-input">
+                    <input type="text" class="course" placeholder="Course Name">
+                    <select class="grade">
+                        <option value="4.0">A</option>
+                        <option value="3.7">A-</option>
+                        <option value="3.3">B+</option>
+                        <option value="3.0">B</option>
+                        <option value="2.7">B-</option>
+                        <option value="2.3">C+</option>
+                        <option value="2.0">C</option>
+                        <option value="1.7">C-</option>
+                        <option value="1.3">D+</option>
+                        <option value="1.0">D</option>
+                        <option value="0.0">F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="info">
+                <div style="margin: 10px 0px 10px 0px;">
+                    <div>
+                        <span class="names">GPA:</span>
+                        <span id="gpa">NaN</span>
+                    </div>
+                    <div>
+                        <span class="names">Status:</span>
+                        <span id="status">NaN</span>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="addGrade">Add Class</button>
+                <button id="removeGrade">Remove Class</button>
+                <button id="calculate">Calculate</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+            <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

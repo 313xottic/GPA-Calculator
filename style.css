@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbb4b4;
+    overscroll-behavior: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;   
+}
+.grade-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+.button-container {
+   display: flex; 
+   justify-content: center; 
+   gap: 10px; 
+}
+#grades, .info{
+    padding: 0px 3px 0px 10px;
+    margin: 0%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 218px;
+    overflow-y:scroll;
+}
+.course, .grade {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-bottom: 2px;
+    border: none; 
+    border-radius: 4px;
+    border-bottom: 2px;
+    box-shadow: 0 2px 0 0 #6c757d;
+    outline: none;
+    transition-duration :0.1s; 
+    height: 40px;
+    box-sizing: border-box;
+}
+.course:focus{
+    box-shadow: 0 4px 0 0 #007BFF;
+    background-color: white;
+    transition-duration :0.1s; 
+}
+.course:not(:focus):hover, .grade:not(:focus):hover { 
+    box-shadow: 0 2px 0 0 #6c757d;
+    background-color: rgba(255, 255, 255, 0.75);
+    transition-duration :0.1s; 
+}
+.names {
+   font-weight: 700;
+   color: #333;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c757d; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #585c60; 
+}
+#reset, #addGrade, #removeGrade {
+   background-color: #6c757d;
+}
+#reset:hover, #addGrade:hover, #removeGrade:hover {
+   background-color: #585c60;
+}
+#calculate {
+    background-color: #007BFF;
+}
+#calculate:hover {
+    background-color: #0052a9;
+}
